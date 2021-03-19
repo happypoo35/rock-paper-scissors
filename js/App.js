@@ -76,7 +76,7 @@ items.forEach((item) => {
 
     setTimeout(() => {
       housePick.classList.add("active");
-    }, 250);
+    }, 200);
 
     setTimeout(() => {
       sideTitle.forEach((el) => {
@@ -145,15 +145,6 @@ newGameBtn.addEventListener("click", () => {
   main.classList.add("active");
   newGame.classList.add("active");
 });
-
-// newGameBtn.addEventListener("click", (e) => {
-//   clearGame();
-//   main.classList.toggle("spock");
-//   score = 0;
-//   gameScore.innerHTML = score;
-//   spock = !spock;
-//   getFigures();
-// });
 
 newRPS.addEventListener("click", () => {
   clearGame();

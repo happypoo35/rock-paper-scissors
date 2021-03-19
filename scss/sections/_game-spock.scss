@@ -28,9 +28,20 @@
         height: 9rem;
         font-size: 0.8rem;
 
+        @include tablet {
+          font-size: .6rem;
+          width: 5.75rem;
+          height: 5.75rem;
+        }
+
         &:not(.active):hover {
           width: 10rem;
           height: 10rem;
+
+          @include tablet {
+            width: 6.5rem;
+            height: 6.5rem;
+          }
         }
 
         &#paper {

@@ -8,13 +8,20 @@
 
 main {
   position: relative;
-  min-height: 100vh;
+  min-height: 768px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 3.125rem 2rem 2rem;
   background: $BG-Gradient;
+  overflow-x: hidden;
+
+  @include tablet {
+    padding: 2rem 2rem 3.5rem;
+    min-height: unset;
+  }
 
   &.active {
     &::after {
@@ -54,10 +61,24 @@ button {
   opacity: 0;
   @extend %tr;
 
+  @include mobile {
+    position: fixed;
+    justify-content: space-around;
+    top: 0;
+    transform: translateY(0) scale(0.5);
+    border-radius: unset;
+    width: 100%;
+    min-height: 100vh;
+  }
+
   &.active {
     pointer-events: unset;
     transform: translateY(-50%) scale(1);
     opacity: 1;
+
+    @include mobile {
+      transform: translateY(0) scale(1);
+    }
   }
 
   &-header {
@@ -65,9 +86,39 @@ button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @include mobile {
+      justify-content: center;
+      text-align: center;
+    }
   }
 
-  img {
+  .btn-close-desktop {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .btn-close-mobile {
+    margin-top: 2rem;
+    display: none;
+
+    @include mobile {
+      display: unset;
+    }
+  }
+
+  button:hover {
+    svg * {
+      opacity: 0.5;
+    }
+  }
+
+  svg {
     pointer-events: none;
+
+    & * {
+      @extend %tr;
+    }
   }
 }

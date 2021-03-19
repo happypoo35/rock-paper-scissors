@@ -14,6 +14,13 @@
 
     &.win {
       box-shadow: 0 0.5em 0 rgb(41, 69, 192), $shadow;
+
+      @include laptop {
+        box-shadow: 0 0.5em 0 rgb(41, 69, 192), $shadow-laptop;
+      }
+      @include tablet {
+        box-shadow: 0 0.5em 0 rgb(41, 69, 192), $shadow-tablet;
+      }
     }
   }
 
@@ -23,6 +30,13 @@
 
     &.win {
       box-shadow: 0 0.5em 0 rgb(199, 108, 27), $shadow;
+
+      @include laptop {
+        box-shadow: 0 0.5em 0 rgb(199, 108, 27), $shadow-laptop;
+      }
+      @include tablet {
+        box-shadow: 0 0.5em 0 rgb(199, 108, 27), $shadow-tablet;
+      }
     }
   }
 
@@ -32,6 +46,13 @@
 
     &.win {
       box-shadow: 0 0.5em 0 rgb(159, 21, 54), $shadow;
+
+      @include laptop {
+        box-shadow: 0 0.5em 0 rgb(159, 21, 54), $shadow-laptop;
+      }
+      @include tablet {
+        box-shadow: 0 0.5em 0 rgb(159, 21, 54), $shadow-tablet;
+      }
     }
   }
 
@@ -41,6 +62,13 @@
 
     &.win {
       box-shadow: 0 0.5em 0 rgb(95, 55, 170), $shadow;
+
+      @include laptop {
+        box-shadow: 0 0.5em 0 rgb(95, 55, 170), $shadow-laptop;
+      }
+      @include tablet {
+        box-shadow: 0 0.5em 0 rgb(95, 55, 170), $shadow-tablet;
+      }
     }
   }
 
@@ -50,6 +78,13 @@
 
     &.win {
       box-shadow: 0 0.5em 0 rgb(45, 143, 172), $shadow;
+
+      @include laptop {
+        box-shadow: 0 0.5em 0 rgb(45, 143, 172), $shadow-laptop;
+      }
+      @include tablet {
+        box-shadow: 0 0.5em 0 rgb(45, 143, 172), $shadow-tablet;
+      }
     }
   }
 

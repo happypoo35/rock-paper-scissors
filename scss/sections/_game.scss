@@ -5,7 +5,16 @@
 
   &.active {
     gap: 4.5rem;
-    padding: 1rem 0;
+    padding: 1rem 0 !important;
+
+    @include laptop {
+      gap: 3.5rem;
+    }
+
+    @include tablet {
+      grid-auto-flow: unset;
+      grid-template-columns: 1fr 1fr;
+    }
 
     .game-bg {
       opacity: 0;
@@ -28,11 +37,25 @@
       position: unset;
       visibility: visible;
       margin-bottom: 3.875rem;
+
+      @include laptop {
+        margin-bottom: 2rem;
+      }
+
+      @include tablet {
+        margin-bottom: unset;
+        margin-top: 2rem;
+        white-space: nowrap;
+      }
     }
   }
 
   .game-bg {
     display: flex;
+
+    @include tablet {
+      width: 12rem;
+    }
 
     &.spock-bg {
       display: none;
@@ -43,6 +66,11 @@
   .house-pick {
     display: grid;
     place-items: center;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &-container {
@@ -59,6 +87,12 @@
       width: 12.5rem;
       height: 12.5rem;
       transform: translate(-50%, -50%);
+
+      @include tablet {
+        width: 8rem;
+        height: 8rem;
+        font-size: 0.6rem;
+      }
 
       &.active,
       &.hidden {
@@ -81,11 +115,28 @@
         top: 0 !important;
         left: 0 !important;
         transform: unset !important;
+
+        @include laptop {
+          font-size: 1rem !important;
+          width: 12.5rem !important;
+          height: 12.5rem !important;
+        }
+
+        @include tablet {
+          font-size: 0.6rem !important;
+          width: 8rem !important;
+          height: 8rem !important;
+        }
       }
 
       &:not(.active):hover {
         width: 13rem;
         height: 13rem;
+
+        @include tablet {
+          width: 9rem;
+          height: 9rem;
+        }
       }
 
       &#paper {
@@ -107,9 +158,11 @@
 
   .house-pick {
     max-width: 0;
+    position: absolute;
     pointer-events: none;
 
     &.active {
+      position: unset;
       max-width: 18rem;
       @extend %tr;
 
@@ -124,6 +177,18 @@
       font-size: 1.5rem;
       opacity: 0;
       transition: unset;
+
+      @include laptop {
+        font-size: 1rem;
+        width: 12.5rem;
+        height: 12.5rem;
+      }
+
+      @include tablet {
+        font-size: 0.6rem;
+        width: 8rem;
+        height: 8rem;
+      }
 
       &.win {
         @extend %tr;
@@ -140,6 +205,10 @@
     opacity: 0;
     position: absolute;
     pointer-events: none;
+
+    @include tablet {
+      grid-area: 2/1/3/3;
+    }
 
     &.active {
       position: unset;

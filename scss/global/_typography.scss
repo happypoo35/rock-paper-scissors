@@ -24,9 +24,19 @@ h1 {
   font-size: 2.5rem;
   line-height: 2rem;
 
+  @include tablet {
+    font-size: 1.3125rem;
+    line-height: 1rem;
+  }
+
   &.game-title-spock {
     font-size: 1.75rem;
     line-height: 1.375rem;
+
+    @include tablet {
+      font-size: 1.25rem;
+      line-height: 0.625rem;
+    }
   }
 }
 
@@ -38,6 +48,15 @@ h3 {
   font-size: 1.5rem;
   letter-spacing: 0.128em;
   font-weight: inherit;
+  text-align: center;
+
+  @include laptop {
+    font-size: 1.25rem;
+  }
+
+  @include tablet {
+    font-size: 0.9375rem;
+  }
 }
 
 h4 {
@@ -49,12 +68,20 @@ h5 {
   font-size: 1rem;
   letter-spacing: 0.156em;
   color: $Score-Text;
+
+  @include tablet {
+    font-size: 0.625rem;
+  }
 }
 
 .points {
   font-size: 4rem;
   line-height: 0.95;
   color: $Score-Number;
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
 }
 
 .select-title {
