@@ -1,0 +1,34 @@
+$Scissors-Gradient: linear-gradient(
+  to top,
+  hsl(39, 89%, 49%),
+  hsl(40, 84%, 53%)
+);
+$Paper-Gradient: linear-gradient(
+  to top,
+  hsl(230, 89%, 62%),
+  hsl(230, 89%, 65%)
+);
+$Rock-Gradient: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+$Lizard-Gradient: linear-gradient(
+  to top,
+  hsl(261, 73%, 60%),
+  hsl(261, 72%, 63%)
+);
+$Cyan: linear-gradient(to top, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+$BG-Gradient: radial-gradient(
+  circle at 50% -30%,
+  hsl(214, 47%, 23%),
+  hsl(237, 49%, 15%) 80%
+);
+$Dark-Text: hsl(229, 25%, 31%);
+$Score-Text: hsl(229, 64%, 46%);
+$Score-Number: rgb(86, 84, 105);
+$Header-Outline: hsl(217, 16%, 45%);
+$Game-item-bg: rgb(230, 230, 230);
+$Dark-Red: hsl(349, 71%, 52%);
+
+$shadow: 0 0 0 4rem rgba(white, 0.02), 0 0 0 8rem rgba(white, 0.02),
+  0 0 0 12rem rgba(white, 0.02);
+
+$laptop: 1024px;
+$tablet: 768px;

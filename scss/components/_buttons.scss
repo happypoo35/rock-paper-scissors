@@ -1,0 +1,28 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.625rem 2.25rem;
+  border: 2px solid rgba(white, 0.5);
+  border-radius: 0.625rem;
+  @extend %tr;
+
+  &:hover {
+    background: white;
+    border-color: transparent;
+    color: $Dark-Text;
+  }
+
+  &-again {
+    background: white;
+    color: $Dark-Text;
+    border: none;
+    padding: 0.9375rem 3.75rem 0.875rem;
+
+    &:hover {
+      color: $Dark-Red;
+    }
+  }
+}

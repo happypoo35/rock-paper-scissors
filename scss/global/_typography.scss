@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+h1,
+h2,
+h4,
+.points,
+.select-title {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2rem;
+
+  &.game-title-spock {
+    font-size: 1.75rem;
+    line-height: 1.375rem;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.128em;
+  font-weight: inherit;
+}
+
+h4 {
+  font-size: 2rem;
+  color: $Dark-Text;
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 0.156em;
+  color: $Score-Text;
+}
+
+.points {
+  font-size: 4rem;
+  line-height: 0.95;
+  color: $Score-Number;
+}
+
+.select-title {
+  font-size: 1.25rem;
+  line-height: 1;
+  color: $Header-Outline;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: inherit;
+  color: rgba(white, 0.8);
+}
+
+a {
+  text-decoration: none;
+}

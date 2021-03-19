@@ -1,0 +1,16 @@
+@import "global/vars";
+@import "global/placeholders";
+@import "global/mixins";
+@import "global/global";
+@import "global/typography";
+
+@import "components/buttons";
+@import "components/score";
+@import "components/game-item";
+
+@import "sections/header";
+@import "sections/game";
+@import "sections/game-spock";
+@import "sections/buttons";
+@import "sections/rules";
+@import "sections/new-game";

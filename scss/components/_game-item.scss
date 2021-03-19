@@ -1,0 +1,101 @@
+.game-item {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  @extend %tr;
+
+  &#paper {
+    background: $Paper-Gradient;
+    box-shadow: 0 0.5em 0 rgb(41, 69, 192);
+
+    &.win {
+      box-shadow: 0 0.5em 0 rgb(41, 69, 192), $shadow;
+    }
+  }
+
+  &#scissors {
+    background: $Scissors-Gradient;
+    box-shadow: 0 0.5em 0 rgb(199, 108, 27);
+
+    &.win {
+      box-shadow: 0 0.5em 0 rgb(199, 108, 27), $shadow;
+    }
+  }
+
+  &#rock {
+    background: $Rock-Gradient;
+    box-shadow: 0 0.5em 0 rgb(159, 21, 54);
+
+    &.win {
+      box-shadow: 0 0.5em 0 rgb(159, 21, 54), $shadow;
+    }
+  }
+
+  &#lizard {
+    background: $Lizard-Gradient;
+    box-shadow: 0 0.5em 0 rgb(95, 55, 170);
+
+    &.win {
+      box-shadow: 0 0.5em 0 rgb(95, 55, 170), $shadow;
+    }
+  }
+
+  &#spock {
+    background: $Cyan;
+    box-shadow: 0 0.5em 0 rgb(45, 143, 172);
+
+    &.win {
+      box-shadow: 0 0.5em 0 rgb(45, 143, 172), $shadow;
+    }
+  }
+
+  &#empty {
+    .item-bg {
+      background: rgba(black, 0.1);
+
+      &::before {
+        all: unset;
+      }
+    }
+  }
+}
+
+.item-bg {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76%;
+  height: 76%;
+  background: rgb(188, 193, 213);
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    background: $Game-item-bg;
+    border-radius: 50%;
+  }
+}
+
+.game-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 33.5%;
+  }
+}

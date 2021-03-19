@@ -1,0 +1,87 @@
+.spock {
+  .game {
+    padding: 5rem 0;
+
+    &-title {
+      display: none;
+
+      &-spock {
+        display: unset;
+      }
+    }
+
+    &.active {
+      .game-bg {
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    &-container {
+      #lizard,
+      #spock {
+        display: flex;
+      }
+
+      .game-item {
+        width: 9rem;
+        height: 9rem;
+        font-size: 0.8rem;
+
+        &:not(.active):hover {
+          width: 10rem;
+          height: 10rem;
+        }
+
+        &#paper {
+          top: 40%;
+          left: 100%;
+        }
+
+        &#scissors {
+          top: 0;
+          left: 50%;
+        }
+
+        &#rock {
+          top: 100%;
+          left: 80%;
+        }
+
+        &#lizard {
+          top: 100%;
+          left: 20%;
+        }
+
+        &#spock {
+          top: 40%;
+          left: 0;
+        }
+      }
+    }
+
+    .game-bg {
+      display: flex;
+
+      &.classic-bg {
+        display: none;
+      }
+    }
+  }
+
+  .rules {
+    padding-bottom: 3rem;
+
+    .modal-header {
+      margin-bottom: 1.125rem;
+    }
+
+    &-classic {
+      display: none;
+    }
+
+    &-spock {
+      display: unset;
+    }
+  }
+}

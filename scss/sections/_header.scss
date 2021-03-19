@@ -1,0 +1,9 @@
+.header {
+  width: min(700px, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.125rem 1.5rem;
+  border: 3px solid $Header-Outline;
+  border-radius: 1rem;
+}
