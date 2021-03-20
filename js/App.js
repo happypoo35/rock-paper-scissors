@@ -76,7 +76,7 @@ items.forEach((item) => {
 
     setTimeout(() => {
       housePick.classList.add("active");
-    }, 200);
+    }, 250);
 
     setTimeout(() => {
       sideTitle.forEach((el) => {
